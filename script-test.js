@@ -356,10 +356,35 @@ r.mostrar_posicion();
 
 
 
+function(arr){
+for( let i = 0; i < arr.length -1 ; i ++){
+	debugger
+	init = arr[i];
+	if (init == arr[i+1]){
+		return true
+	}
+	else{
+		return false
+	}
+}
+}
+
+// ej sum de elem sin usar for
+
+function sumN(n){
+	return (n)*(n+1)/2;
+}
 
 
+//Los sustantivos propiops empiezan siempre con letra capital(la primera letra mayúscula), seguidas de letras minúsculas.
 
-
+function substantive(str){
+	debugger
+   let first = str[0].toUpperCase();
+   let total = str.substring(1).toLowerCase();;
+   return first + total ;
+}
+// big o notation O(1) - O(log(n))
 
 
 
