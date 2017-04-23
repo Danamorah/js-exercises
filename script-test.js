@@ -386,6 +386,35 @@ function substantive(str){
 }
 // big o notation O(1) - O(log(n))
 
+// Considerar una expresión arítmetica de la forma A#B=C. Checar si es posible reemplazar el # con una de los 4 signos matemáticos : +,-,* or / para obter una expresión correcta.
+
+// Ejemplo: Para A = 2, B = 3 y C = 5, la salida deberá ser True Podemos reemplazar # con "+"para obtener 2 + 3 = 5.
+
+function main() {
+    var A_temp = readLine().split(' ');
+    var A = parseInt(A_temp[0]);
+    var B = parseInt(A_temp[1]);
+    var C = parseInt(A_temp[2]);
+
+    if( A + B == C || A * B == C || A - B == C || A / B == C){
+        console.log(true);
+    }
+    else{
+        console.log(false);
+    }
+}
+
+// big o notation O(1) - O(log(n))
+
+
+for(i = 0 ; i < 10; i++){
+	let div = document.createElement("div");
+	div.classList.add("elem");
+	let container = document.getElementById("container");
+	container.appendChild(div);
+
+}  
+
 
 
 
