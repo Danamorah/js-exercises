@@ -428,6 +428,30 @@ function sumaObjetos(numInicial, numFinal) {
     return resultado
 } 
 
+// objeto // metodo // funcion
+
+function superCoder(nombre, edad, ocupacion, genero) {
+    
+    function Persona(name,age,ocupa,gender){
+      this.nombre = name;
+      this.edad = age;
+      this.ocupacion = ocupa;
+      this.genero = gender;
+      this.mensaje = function(){
+          var mensaje = "";
+          if(this.edad > 17 && this.ocupacion == "Web Developer" || this.ocupacion == "Estudiante Laboratoria"){
+            mensaje = "You're awesome";
+          } else {
+            mensaje = "Upsiii";
+          }
+          return mensaje;
+      }
+    }
+    
+    var objeto = new Persona(nombre, edad, ocupacion, genero);
+    return objeto.mensaje()
+}
+
 
 
 
