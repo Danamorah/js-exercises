@@ -413,7 +413,20 @@ for(i = 0 ; i < 10; i++){
 	let container = document.getElementById("container");
 	container.appendChild(div);
 
-}  
+} 
+// definir un objeto
+
+function sumaObjetos(numInicial, numFinal) {
+    var objeto = {
+        inicio:numInicial,
+        fin:numFinal
+    }
+    var resultado = 0;
+    for(var i = objeto.inicio; i <= objeto.fin;i++){
+        resultado += i
+    }
+    return resultado
+} 
 
 
 
